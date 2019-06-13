@@ -4,7 +4,7 @@
   <artifactId>alien</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <description>SpringCloud父工程</description>
+  <description>SpringCloud父工程</description>\
   
   <parent>
         <groupId>org.springframework.boot</groupId>
@@ -12,7 +12,6 @@
         <version>2.0.3.RELEASE</version>
         <relativePath/>
    </parent>
-    
     
    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,9 +49,11 @@
         </plugins>
     </build>
   
-  
     <modules>
     	<module>alien-registry</module>
     	<module>alien-zuul</module>
+    	<module>alien-prodiver</module>
+    	<module>alien-consumer</module>
+    	<module>alien-turbine</module>
     </modules>
 </project>

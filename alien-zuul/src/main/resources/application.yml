@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:11400/eureka/
+server:
+  port: 11402
+spring:
+  application:
+    name: alien-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: alien-provider-api
+    api-b:
+      path: /api-b/**
+      serviceId: alien-consumer
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"

@@ -2,36 +2,33 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.cjk.group</groupId>
-    <artifactId>alien</artifactId>
+    <artifactId>alien-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>alien-zuul</artifactId>
+  <artifactId>alien-provider-core</artifactId>
+  <name>alien-provider-core</name>
+  <description>服务提供方实现核心工程</description>
   
   <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-        </dependency>
-        <dependency>
+      <dependency>
+      	<groupId>org.cjk.group</groupId>
+      	<artifactId>alien-provider-api</artifactId>
+      	<version>0.0.1-SNAPSHOT</version>
+      </dependency>
+      
+      <dependency>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-actuator</artifactId>
-	    </dependency>
-        <dependency>
+      </dependency>
+      <dependency>
           <groupId>org.springframework.cloud</groupId>
           <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
-        <dependency>
+      </dependency>
+      <dependency>
           <groupId>org.springframework.cloud</groupId>
           <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
-        </dependency>
-    </dependencies>
-    
+      </dependency>
+      <!-- Hystrix Dashboard是作为断路器状态的一个组件，提供了数据监控图形化界面 -->
+  </dependencies>
+  
 </project>

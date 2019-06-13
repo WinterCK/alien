@@ -1,0 +1,13 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:11400/eureka/
+server:
+  port: 11404
+spring:
+  application:
+    name: alien-provider-api
+# 再D版本的Feign之后， 自带熔断器 
+feign: 
+  hystrix: 
+    enabled: true  # 打开熔断器开关
