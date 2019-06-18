@@ -12,10 +12,10 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableHystrix
 @EnableHystrixDashboard
 @EnableCircuitBreaker
-public class AlienConsumerApplication {
+public class AlienMessageConsumerApplication {
 
 	public static void main(String[] args) {
 		// 跑多个client，可以使用 -Dserver.port=8888 等跑多个client
-        SpringApplication.run(AlienConsumerApplication.class, args);
+        SpringApplication.run(AlienMessageConsumerApplication.class, args);
     }
 }

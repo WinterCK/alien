@@ -1,9 +1,9 @@
 server: 
-  port: 11500
+  port: 11405
 
 spring:
   application:
-    name: alien-turbine
+    name: alien-order
 
 eureka:
   client:
@@ -18,12 +18,3 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
-
-turbine:
-  app-config: alien-zuul,alien-order,alien-message
-  aggregator:
-    clusterConfig: default
-  clusterNameExpression: new String("default")
-  combine-host: true
-  instanceUrlSuffix:
-    default: actuator/hystrix.stream

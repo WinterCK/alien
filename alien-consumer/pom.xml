@@ -41,4 +41,9 @@
       </dependency>
   </dependencies>
   
+  <packaging>pom</packaging>
+  <modules>
+  	<module>alien-order</module>
+  	<module>alien-message</module>
+  </modules>
 </project>

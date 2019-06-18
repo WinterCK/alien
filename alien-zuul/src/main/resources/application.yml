@@ -10,11 +10,11 @@ spring:
 zuul:
   routes:
     api-a:
-      path: /api-a/**
-      serviceId: alien-provider-api
+      path: /api-message/**
+      serviceId: alien-message
     api-b:
-      path: /api-b/**
-      serviceId: alien-consumer
+      path: /api-order/**
+      serviceId: alien-order
       
 management:
   endpoints:
