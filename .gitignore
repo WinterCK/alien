@@ -20,6 +20,10 @@ RemoteSystemsTempFiles
 paascloud-master/
 fail-use/
 
+# idea
+*.iml
+.idea/
+
 # Compiled class file
 *.class
 
